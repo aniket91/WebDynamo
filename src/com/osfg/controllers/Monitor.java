@@ -7,7 +7,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 
-
+/**
+ * 
+ * @author athakur
+ * Test class for Monitor
+ */
 @Controller
 public class Monitor {
 	
