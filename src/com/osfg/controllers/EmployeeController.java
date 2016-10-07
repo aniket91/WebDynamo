@@ -39,10 +39,21 @@ public class EmployeeController {
 	}
 
 	@RequestMapping(value = "/submitEmployeeInfoForm.htm", method = RequestMethod.POST)
-	public void saveEmployeeInfo(@ModelAttribute Employee employeeDetails, Errors errors, ModelMap model,
+	public String saveEmployeeInfo(@ModelAttribute Employee employeeDetails, Errors errors, ModelMap model,
 			HttpServletRequest request, HttpServletResponse response) {
 
 		logger.debug("Receive Employee Information Name : {} and Age : : {}", employeeDetails.getName(), employeeDetails.getAge());
+		model.addAttribute(COMMAND_NAME, employeeDetails);
+		if(employeeDetails.getName() == null || employeeDetails.getAge() <= 0) {
+			model.addAttribute("status","failure");
+		}
+		else if(employeeDetails.getAge() <= 19) {
+			model.addAttribute("status","warning");
+		}
+		else {
+			model.addAttribute("status","success");
+		}
+		return EMPLOYEE_FORM_PAGE;
 	}
 
 }

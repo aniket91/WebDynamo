@@ -20,7 +20,7 @@ public class Monitor {
 	@RequestMapping(value="/test.htm",method=RequestMethod.GET)
 	public String test() {
 		logger.debug("Entered Controller : {} and method : {}", "Monitor", "test");
-		return "pages/index.html";
+		return "index";
 	}
 
 }
