@@ -43,7 +43,7 @@ function submitForm(){
         />
         
         <center>
-        	<input type="submit" value="Beautify" onclick="submitForm()"/>
+        	<input type="submit" value="Beautify" onclick="submitForm()" style="font-size: 20px;background-color: #4CAF50;color: white;"/>
         </center>
          
     </form:form>
