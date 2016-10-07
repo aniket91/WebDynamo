@@ -3,6 +3,7 @@ package com.osfg.controllers;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -21,6 +22,13 @@ public class Monitor {
 	public String test() {
 		logger.debug("Entered Controller : {} and method : {}", "Monitor", "test");
 		return "index";
+	}
+	
+	@RequestMapping(value="/error.htm",method=RequestMethod.GET)
+	public String testError(ModelMap modelMap) {
+		logger.debug("Entered Controller : {} and method : {}", "Monitor", "testError");
+		modelMap.addAttribute("error", "This is test error message!");
+		return "error";
 	}
 
 }
