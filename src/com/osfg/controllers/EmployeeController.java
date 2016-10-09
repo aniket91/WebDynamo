@@ -35,6 +35,7 @@ public class EmployeeController {
 		empForm.setName("Aniket Thakur");
 		empForm.setAge(25);
 		modelMap.addAttribute(COMMAND_NAME, empForm);
+		modelMap.addAttribute("status","info");
 		return EMPLOYEE_FORM_PAGE;
 	}
 
@@ -47,7 +48,7 @@ public class EmployeeController {
 		if(employeeDetails.getName() == null || employeeDetails.getAge() <= 0) {
 			model.addAttribute("status","failure");
 		}
-		else if(employeeDetails.getAge() <= 19) {
+		else if(employeeDetails.getAge() <= 18) {
 			model.addAttribute("status","warning");
 		}
 		else {

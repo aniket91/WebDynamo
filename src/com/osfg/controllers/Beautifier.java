@@ -27,6 +27,11 @@ import com.google.gson.JsonSyntaxException;
 import com.osfg.model.EntityType;
 import com.osfg.model.UnformattedStringForm;
 
+/**
+ * 
+ * @author athakur
+ * Controller class used for beautifier workflows
+ */
 @Controller
 public class Beautifier {
 	

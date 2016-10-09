@@ -11,16 +11,16 @@ import org.springframework.web.bind.annotation.RequestMethod;
 /**
  * 
  * @author athakur
- * Test class for Monitor
+ * Test class for Monitor. Can be used to testing index and error pages.
  */
 @Controller
 public class Monitor {
 	
 	Logger logger = LoggerFactory.getLogger(Monitor.class);
 	
-	@RequestMapping(value="/test.htm",method=RequestMethod.GET)
-	public String test() {
-		logger.debug("Entered Controller : {} and method : {}", "Monitor", "test");
+	@RequestMapping(value="/index.htm",method=RequestMethod.GET)
+	public String testIndex() {
+		logger.debug("Entered Controller : {} and method : {}", "Monitor", "testIndex");
 		return "index";
 	}
 	

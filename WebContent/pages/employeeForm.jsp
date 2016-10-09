@@ -31,6 +31,9 @@ function submitForm(){
 	<c:if test="${status == 'warning'}">
 		<p class="warning">Data saved successfully. Watch your steps. 18+ only!</p>
 	</c:if>
+ 	<c:if test="${status == 'info'}">
+		<p class="info">Try adding age 18+, less than 18 and non integer values and notice the error statuses shown!</p>
+	</c:if>
  
     <form:form id="form" name="form"
         method="post" commandName="employeeDetails">

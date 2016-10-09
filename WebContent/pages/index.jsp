@@ -13,6 +13,7 @@
 	
 	<p>Following workflows are available</p>
 	<ul>
+		<li><a target="_blank" href="/WebDynamo/getEmployeeInfoForm.htm">Test Spring workflow</a></li>
 		<li><a target="_blank" href="/WebDynamo/beautifyXml.htm">Beautify XML</a></li>
 		<li><a target="_blank" href="/WebDynamo/beautifyJson.htm">Beautify JSON</a></li>
 	</ul>
