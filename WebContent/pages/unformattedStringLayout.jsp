@@ -6,12 +6,24 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>XML Beautifier</title>
+    <c:if test="${ENTITY_TYPE ==  'XML'}">
+    	<title>XML Beautifier</title>
+	</c:if>
+	<c:if test="${ENTITY_TYPE ==  'JSON'}">
+		<title>Json Beautifier</title>
+	</c:if>
+
 <script>
  
 function submitForm(){
     var formVar = document.forms["form"];
-    formVar.action="/WebDynamo/beautifyXml.htm";
+    <c:if test="${ENTITY_TYPE ==  'XML'}">
+    	formVar.action="/WebDynamo/beautifyXml.htm";
+	</c:if>
+	<c:if test="${ENTITY_TYPE ==  'JSON'}">
+	formVar.action="/WebDynamo/beautifyJson.htm";
+	</c:if>
+    
     formVar.submit();
 }
  
@@ -28,18 +40,27 @@ function submitForm(){
 </head>
 <body>
 	<form:form id="form" name="form"
-        method="post" commandName="xmlForm">
+        method="post" commandName="unformattedStringForm">
       
         
-        <h2><p><b>Enter you XML string below <span style="color:red">*</span> :</b></p></h2>
+        <h2><b>
+     	<c:if test="${ENTITY_TYPE ==  'XML'}">
+    	Enter you XML string below <span style="color:red">*</span> :
+		</c:if>
+		<c:if test="${ENTITY_TYPE ==  'JSON'}">
+		Enter you Json string below <span style="color:red">*</span> :
+		</c:if>       
+        
+        </b></h2>
+        
         <c:if test="${error != null }">
         	 <p class="error">${error}</p>
         	 <br/>
         </c:if>
        
-        <form:textarea path="xml" rows="30"  placeholder="Enter your XML String here..."
+        <form:textarea path="unformattedString" rows="30"  placeholder="Enter your unformatted String here..."
         onfocus="this.placeholder = ''" 
-        onblur="this.placeholder = 'Enter your XML String here...'"
+        onblur="this.placeholder = 'Enter your unformatted String here...'"
         />
         
         <center>

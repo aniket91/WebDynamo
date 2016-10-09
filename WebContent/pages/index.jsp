@@ -9,7 +9,15 @@
 <body>
 	<h1>Hello World!</h1>
 	<p>Congratulations! You have successfully deployed this webapp!</p>
-	<p>For regular updates subscribe to <a href="http://opensourceforgeeks.blogspot.in/" target="_blank">http://opensourceforgeeks.blogspot.in/</a></p>
+	<p>For regular updates subscribe to our blog <a href="http://opensourceforgeeks.blogspot.in/" target="_blank">http://opensourceforgeeks.blogspot.in/</a></p>
+	
+	<p>Following workflows are available</p>
+	<ul>
+		<li><a target="_blank" href="/WebDynamo/beautifyXml.htm">Beautify XML</a></li>
+		<li><a target="_blank" href="/WebDynamo/beautifyJson.htm">Beautify JSON</a></li>
+	</ul>
+	
+	
 	<p><b>
 	Regards,<br/>
 	<a href="http://in.linkedin.com/pub/aniket-thakur/27/5b9/a88/" target="_blank">Aniket Thakur</a>

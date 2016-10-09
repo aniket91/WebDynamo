@@ -30,5 +30,6 @@
 		<dependency org="ch.qos.logback" name="logback-classic" rev="1.1.7"/>
 		<dependency org="org.slf4j" name="slf4j-api" rev="1.7.21"/>
 		<dependency org="org.apache.taglibs" name="taglibs-standard-impl" rev="1.2.5"/>
+		<dependency org="com.google.code.gson" name="gson" rev="2.7"/>
 	</dependencies>
 </ivy-module>
