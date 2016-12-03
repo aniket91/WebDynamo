@@ -1,5 +1,11 @@
 package com.osfg.model;
 
+/**
+ * 
+ * @author athakur
+ * Model object needed to make FCM call 
+ * Can be extended later to take type of notification - data, notification etc
+ */
 public class FCMConfig {
 
 	String serverApiKey;

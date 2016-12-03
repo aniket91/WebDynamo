@@ -23,6 +23,11 @@ import com.osfg.model.FCMConfig;
 import com.osfg.utils.CommonUtils;
 import com.osfg.utils.Constants;
 
+/**
+ * 
+ * @author athakur
+ * Controller to send Firebase cloud messaging to registred client
+ */
 @Controller
 public class FCMSender {
 	
