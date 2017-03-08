@@ -34,6 +34,7 @@
 		<dependency org="org.json" name="json" rev="20160810"/>
 		<dependency org="commons-io" name="commons-io" rev="2.4"/>
 		<dependency org="org.apache.httpcomponents" name="httpclient" rev="4.5.2"/>
+		<dependency org="org.owasp.esapi" name="esapi" rev="2.1.0"/>
 		
 		<!-- For json coverter - jackson   -->
 		<dependency org="com.fasterxml.jackson.core" name="jackson-databind" rev="2.8.5"/>

@@ -25,5 +25,6 @@
 	<a href="http://in.linkedin.com/pub/aniket-thakur/27/5b9/a88/" target="_blank">Aniket Thakur</a>
 	</b>
 	</p>
+	<footer>&copy; Copyright by Aniket Thakur 2016.</footer>
 </body>
 </html>
