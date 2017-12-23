@@ -27,8 +27,11 @@
 	
 	<dependencies>
 		<dependency org="org.springframework" name="spring-webmvc" rev="4.3.2.RELEASE"/>
-		<dependency org="ch.qos.logback" name="logback-classic" rev="1.1.7"/>
 		<dependency org="org.slf4j" name="slf4j-api" rev="1.7.21"/>
+		<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12 -->
+		<dependency org="org.slf4j" name="slf4j-log4j12" rev="1.7.21"/>
+		
+		
 		<dependency org="org.apache.taglibs" name="taglibs-standard-impl" rev="1.2.5"/>
 		<dependency org="com.google.code.gson" name="gson" rev="2.7"/>
 		<dependency org="org.json" name="json" rev="20160810"/>

@@ -19,6 +19,7 @@
 		<servlet-name>mvc-dispatcher</servlet-name>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
+	
 
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
@@ -29,19 +30,7 @@
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
 	
-	<context-param>
-		<param-name>log4jConfiguration</param-name>
-		 <param-value>/WEB-INF/webdynamo-log4j.xml</param-value>
-	</context-param>
-	
-	<context-param>
-		 <param-name>log4j.refresh.interval</param-name>
-		 <param-value>120</param-value>
-	</context-param>
 
-	<listener>
-		<listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
-	</listener>
 
 
 </web-app>
